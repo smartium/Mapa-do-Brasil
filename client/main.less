@@ -1,17 +1,36 @@
+@font-face {
+  font-family: "JetBrains";
+  src: url("/fonts/JetBrainsMonoNL-Light.ttf");
+}
+
 body {
   padding: 10px;
-  font-family: sans-serif;
+  font-family: "JetBrains";
+  background: black;
+  color: antiquewhite;
+  text-align: center;
 }
 
 .mapa {
-  width: 40%;
+  svg {
+    width: 35%;
+  }
   .mapsvg-region {
-    fill: white;
+    fill: antiquewhite;
     stroke: black;
     stroke-width: 1px;
   }
 
-  .mapsvg-region:hover {
-    fill: black;
+  .clear {
+    color: grey;
+    font-size: 0.7em;
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
   }
+
+  //   .mapsvg-region:hover {
+  //     fill: black;
+  //   }
 }
