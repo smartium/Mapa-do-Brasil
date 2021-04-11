@@ -13,7 +13,11 @@
 
 <template name="mapa">
   <div class="mapa">
-    <h2>{{{getStateName}}}</h2>
+    <div class="state-name-d">
+      <h2 class="state-name-h">
+        <i class="far fa-times-circle clear"></i> {{getStateName}}
+      </h2>
+    </div>
     <svg
       xmlns:mapsvg="http://mapsvg.com"
       xmlns:dc="http://purl.org/dc/elements/1.1/"
